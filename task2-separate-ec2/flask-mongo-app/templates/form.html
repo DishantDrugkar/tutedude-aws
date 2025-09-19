@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask + Mongo Form</title>
+</head>
+<body>
+    <h2>Task 2 Deploy flask backend and express frontend in separate ec2 instances.</h2>
+    {% if error %}
+        <p style="color:red;">Error: {{ error }}</p>
+    {% endif %}
+    <form action="/submit" method="post">
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
